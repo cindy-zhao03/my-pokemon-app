@@ -13,7 +13,7 @@ To run this application locally, follow these steps:
 
 ### Installation
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine by running git clone https://github.com/cindy-zhao03/my-pokemon-app.git
 
 2. Navigate to the project directory in your terminal.
 
