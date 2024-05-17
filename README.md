@@ -13,14 +13,30 @@ To run this application locally, follow these steps:
 
 ### Installation
 
-1. Clone this repository to your local machine by running git clone https://github.com/cindy-zhao03/my-pokemon-app.git
 
-2. Navigate to the project directory in your terminal.
+1. Clone this repository to your local machine:
 
-3. Install dependencies by running the following command: npm install
+    ```
+    git clone https://github.com/cindy-zhao03/my-pokemon-app.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```
+    cd my-pokemon-app
+    ```
+
+3. Install dependencies:
+
+    ```
+    npm install
+    ```
 
 ### Starting the Server
 
-To start the server, run the following command: node app.js
+To start the server, run the following command:
+    ```
+    node app.js
+    ```
 
 This will start the server at http://localhost:3000 by default. Go to http://localhost:3000 on your browser to access the web application.
