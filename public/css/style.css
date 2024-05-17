@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f7f7f7;
+    background-image: linear-gradient(to bottom, #f7f7f7, #d3d3d3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    position: relative; /* Added for positioning Pokeballs */
+}
+
+header {
+    width: 100%;
+    background-color: #3b4cca;
+    background-image: linear-gradient(to bottom, #3b4cca, #2a3280);
+    color: #ffcb05;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 4px solid #ffcb05;
+    z-index: 2; /* header is above the Pokeballs */
+    position: fixed;
+    top: 0;
+}
+
+main {
+    margin-top: 250px; 
+    margin-bottom: 200px; /* make space for Pokeballs at the bottom */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+/* Pokéballs styling */
+body::before {
+    content: "";
+    background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'),
+                      url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png'),
+                      url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png'),
+                      url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png'),
+                      url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png'),
+                      url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1; /* Pokeballs are below the main content */
+}
+
+body::before {
+    background-position: 15% 90%, 30% 90%, 45% 90%, 60% 90%, 75% 90%, 90% 90%; /* positions for 6 Pokeballs */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3b4cca;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    font-size: 18px; 
+    cursor: pointer;
+    background-color: #3b4cca;
+    background-image: linear-gradient(to bottom, #3b4cca, #2a3280);
+    color: #fff;
+    border: none;
+    border-radius: 30px; 
+    margin: 10px 0;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+    background-color: #ffcb05;
+}
+
+a {
+    color: #3b4cca;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 300px;
+    display: block;
+    margin-top: 10px;
+}
+
+/*shading for fonts */
+h1, h2, h3, p, ul, li, a {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}

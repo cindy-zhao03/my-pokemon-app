@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Search Pokémon</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Main heading -->
+        <h1>Pokémon Search</h1>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <!-- Search form -->
+        <h1>Search for a Pokémon</h1>
+        <form action="/card" method="get">
+            <!-- Label for search input -->
+            <label for="searchTerm">Enter Pokémon Name or ID:</label>
+            <!-- Input field for search term -->
+            <input type="text" id="searchTerm" name="searchTerm" required>
+            <!-- Button to submit search -->
+            <button type="submit">Search</button>
+        </form>
+        <!-- Button to get random Pokémon -->
+        <button id="randomButton">Get Random Pokémon</button>
+    </main>
+    <!-- JavaScript for random Pokémon button -->
+    <script>
+        document.getElementById('randomButton').addEventListener('click', () => {
+            window.location.href = '/random';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Pokémon Details</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Main heading -->
+        <h1>Pokémon Details</h1>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <!-- Conditionally display error message or Pokémon details -->
+        <% if (error) { %>
+            <!-- Display error message if present -->
+            <p><%= error %></p>
+        <% } else if (pokemon) { %>
+            <!-- Display Pokémon details -->
+            <h2>Name: <%= pokemon.name %></h2>
+            <p>ID: <%= pokemon.id %></p>
+            <p>Base Experience: <%= pokemon.base_experience %></p>
+            <p>Height: <%= pokemon.height %></p>
+            <p>Weight: <%= pokemon.weight %></p>
+            <!-- List of abilities -->
+            <h3>Abilities:</h3>
+            <ul>
+                <!-- Loop through each ability and display -->
+                <% pokemon.abilities.forEach(ability => { %>
+                    <li><%= ability.ability.name %></li>
+                <% }); %>
+            </ul>
+            <!-- List of forms -->
+            <h3>Forms:</h3>
+            <ul>
+                <!-- Loop through each form and display -->
+                <% pokemon.forms.forEach(form => { %>
+                    <li><%= form.name %></li>
+                <% }); %>
+            </ul>
+        <% } %>
+        <!-- Link to search another Pokémon -->
+        <a href="/">Search another Pokémon</a>
+    </main>
+
+</body>
+</html>
