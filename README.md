@@ -1,7 +1,7 @@
 # Pokémon Search App
 
 This is a web application that allows users to search for Pokémon details through their
-names or ID using the PokéAPI.
+names or ID using the [PokéAPI](https://pokeapi.co/).
 
 ## Getting Started
 
