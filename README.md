@@ -1,7 +1,7 @@
-# my-pokemon-app
-# Pokémon Details App
+# Pokémon Search App
 
-This is a simple web application that allows users to search for Pokémon details using the PokéAPI.
+This is a web application that allows users to search for Pokémon details through their
+names or ID using the PokéAPI.
 
 ## Getting Started
 
@@ -21,6 +21,6 @@ To run this application locally, follow these steps:
 
 ### Starting the Server
 
-To start the server, run the following command: npm start
+To start the server, run the following command: node app.js
 
-This will start the server at http://localhost:3000 by default.
+This will start the server at http://localhost:3000 by default. Go to http://localhost:3000 on your browser to access the web application.
